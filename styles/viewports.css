@@ -1,4 +1,46 @@
+.viewport-reveal {
+  margin-top: 60px;
+}
+.viewport {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.statistics tr {
+  line-height: 25px;
+}
+
+
+.orientation {
+  padding: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: #e2abfa;
+  color: #ba44d3;
+  font-family: monospace;
+}
+
+.resolution {
+  padding: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: #abb2fa;
+  color: #4444d3;
+  font-family: monospace;
+}
+
+.resolution::before {
+  content: '≤ 768px';
+}
+
 @media (orientation: landscape) {
+  .orientation {
+    background-color: #abfab0;
+    color: #349f30;
+  }
   .orientation::before {
     content: 'landscape'
   }
@@ -7,5 +49,29 @@
 @media (orientation: portrait) {
   .orientation::before {
     content: 'portrait'
+  }
+}
+
+@media(min-width: 768px) {
+  .resolution::before {
+    content: '≥ 768px ≤ 992px';
+  }
+}
+
+@media(min-width: 992px) {
+  .resolution::before {
+    content: '≥ 992px ≤ 1200px';
+  }
+}
+
+@media(min-width: 1200px) {
+  .resolution::before {
+    content: '≥ 1200px ≤ 1920px';
+  }
+}
+
+@media(min-width: 1920px) {
+  .resolution::before {
+    content: '≥ 1920px';
   }
 }
