@@ -1,16 +1,29 @@
-.viewport-reveal {
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.viewport-inspector {
   margin-top: 60px;
 }
-.viewport {
+
+.viewport-inspector-heading {
+  text-align: center;
+}
+
+.viewport-inspector-statistics {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
 
-.statistics tr {
-  line-height: 25px;
+.viewport-inspector-statistics > table {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
+.viewport-inspector-statistics > table tr {
+  line-height: 25px;
+}
 
 .orientation {
   padding: 2px;
