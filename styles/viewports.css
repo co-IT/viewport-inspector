@@ -1,0 +1,11 @@
+@media (orientation: landscape) {
+  .orientation::before {
+    content: 'landscape'
+  }
+}
+
+@media (orientation: portrait) {
+  .orientation::before {
+    content: 'portrait'
+  }
+}
