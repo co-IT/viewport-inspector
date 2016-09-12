@@ -35,7 +35,7 @@ body {
   font-family: monospace;
 }
 
-.resolution {
+.width {
   padding: 2px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -45,7 +45,7 @@ body {
   font-family: monospace;
 }
 
-.resolution::before {
+.width::before {
   content: '≤ 768px';
 }
 
@@ -66,25 +66,25 @@ body {
 }
 
 @media(min-width: 768px) {
-  .resolution::before {
+  .width::before {
     content: '≥ 768px ≤ 992px';
   }
 }
 
 @media(min-width: 992px) {
-  .resolution::before {
+  .width::before {
     content: '≥ 992px ≤ 1200px';
   }
 }
 
 @media(min-width: 1200px) {
-  .resolution::before {
+  .width::before {
     content: '≥ 1200px ≤ 1920px';
   }
 }
 
 @media(min-width: 1920px) {
-  .resolution::before {
+  .width::before {
     content: '≥ 1920px';
   }
 }
